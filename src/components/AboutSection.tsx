@@ -64,17 +64,15 @@ const AboutSection = () => {
               </Badge>
               
               <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-                Navigating Tech Horizons
-                <br />
-                <span className="text-white drop-shadow-lg">Together</span>
-              </h2>
-              
-              <p className="text-lg text-white/90 leading-relaxed">
-                There are many variations of passages of Lorem Ipsum available, but the 
-                majority have suffered alteration in some form, by injected humour, or 
-                randomised words which don't look even slightly believable.
-              </p>
-            </div>
+            Building Smarter Digital Solutions<br />
+            <span className="text-white drop-shadow-lg">For a Connected Future</span>
+          </h2>
+
+          <p className="text-lg text-white/90 leading-relaxed">
+            At AROSOFT, we craft scalable software and seamless user experiences that drive innovation. 
+            From backend systems to beautiful frontends, we help brands move fast, stay secure, and grow with confidence.
+          </p>
+
 
             {/* Feature Cards */}
             <div className="grid sm:grid-cols-2 gap-4">
