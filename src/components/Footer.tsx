@@ -53,15 +53,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+256 787 726 388</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-gray-300">hello@arosoft.io</span>
+                <span className="text-gray-300">info@arosoft.io</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-primary" />
-                <span className="text-gray-300">San Francisco, CA</span>
+                <span className="text-gray-300">Kitintale Luzira - Kampala</span>
               </div>
             </div>
 
@@ -131,7 +131,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-6">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-gray-400 text-sm">
-            © 2024 Arosoft Innovations Ltd. All rights reserved.
+            © 2025 Arosoft Innovations Ltd. All rights reserved.
           </p>
           
           <div className="flex items-center space-x-6 text-sm">
