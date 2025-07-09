@@ -3,21 +3,21 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const AboutSection = () => {
   const stats = [
-    { number: "20.5k", label: "Projects Done" },
-    { number: "100.5k", label: "Happy Clients" },
-    { number: "150.5k", label: "Team Members" }
+    { number: "20.5k", label: "Projects Completed" },
+    { number: "100.5k", label: "Clients Empowered" },
+    { number: "150.5k", label: "Global Users Served" }
   ];
 
   const features = [
     {
       icon: "🔧",
-      title: "Back-End Development",
-      description: "Robust server-side solutions"
+      title: "Backend Engineering",
+      description: "Scalable and secure infrastructures"
     },
     {
-      icon: "🎨", 
-      title: "Product Design",
-      description: "Beautiful and functional interfaces"
+      icon: "🎨",
+      title: "UI/UX Design",
+      description: "Clean, intuitive digital experiences"
     }
   ];
 
@@ -27,15 +27,12 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Side - Images */}
           <div className="relative">
-            {/* Main Image */}
             <div className="relative">
               <img 
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
-                alt="Team collaboration" 
+                alt="Team collaboration at AROSOFT" 
                 className="w-full h-96 object-cover rounded-2xl shadow-elegant"
               />
-              
-              {/* Floating Card */}
               <div className="absolute -bottom-8 -right-8 bg-white rounded-2xl p-6 shadow-glow max-w-xs">
                 <div className="flex items-center space-x-4">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
@@ -45,13 +42,12 @@ const AboutSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Team Collaboration</h4>
-                    <p className="text-sm text-muted-foreground">Working together efficiently</p>
+                    <p className="text-sm text-muted-foreground">Seamless teamwork across projects</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Decorative Elements */}
             <div className="absolute -top-8 -left-8 w-24 h-24 bg-primary/10 rounded-full animate-pulse"></div>
             <div className="absolute top-1/2 -right-4 w-16 h-16 bg-accent/10 rounded-full animate-bounce"></div>
           </div>
@@ -60,19 +56,20 @@ const AboutSection = () => {
           <div className="text-white space-y-8">
             <div className="space-y-4">
               <Badge variant="secondary" className="bg-white/10 text-white border-white/20">
-                ← ABOUT COMPANY →
+                ← ABOUT AROSOFT →
               </Badge>
-              
+
               <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-            Building Smarter Digital Solutions<br />
-            <span className="text-white drop-shadow-lg">For a Connected Future</span>
-          </h2>
+                Engineering Future-Ready Systems<br />
+                <span className="text-white drop-shadow-lg">With You in Mind</span>
+              </h2>
 
-          <p className="text-lg text-white/90 leading-relaxed">
-            At AROSOFT, we craft scalable software and seamless user experiences that drive innovation. 
-            From backend systems to beautiful frontends, we help brands move fast, stay secure, and grow with confidence.
-          </p>
-
+              <p className="text-lg text-white/90 leading-relaxed">
+                AROSOFT Innovations is a tech powerhouse focused on delivering reliable software 
+                solutions, intuitive designs, and robust digital infrastructure to fuel business growth 
+                and connectivity across industries.
+              </p>
+            </div>
 
             {/* Feature Cards */}
             <div className="grid sm:grid-cols-2 gap-4">
