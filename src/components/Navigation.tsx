@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Phone, Mail, HeadphonesIcon, User, LogOut } from "lucide-react";
+import { Menu, Phone, Mail, HeadphonesIcon, User, LogOut, Search } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "sonner";
@@ -56,8 +56,8 @@ const Navigation = () => {
 
   return (
     <>
-      {/* Top Bar */}
-      <div className="bg-primary/5 border-b border-primary/10">
+      {/* Top Bar - hidden on small screens */}
+      <div className="bg-primary/5 border-b border-primary/10 hidden md:block">
         <div className="container mx-auto px-4 py-2">
           <div className="flex items-center justify-between text-sm">
             <div className="flex items-center space-x-6 text-muted-foreground">
@@ -149,6 +149,18 @@ const Navigation = () => {
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Search bar (hidden on mobile) */}
+            <div className="hidden lg:flex items-center space-x-2">
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="pl-8 pr-4 py-1 border rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+                <Search className="absolute left-2 top-1.5 h-4 w-4 text-muted-foreground" />
+              </div>
             </div>
 
             {/* CTA Button */}
