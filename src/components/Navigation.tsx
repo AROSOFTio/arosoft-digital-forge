@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, ChevronDown, Phone, Mail, HeadphonesIcon, User, LogOut } from "lucide-react";
+import { Menu, Phone, Mail, HeadphonesIcon, User, LogOut } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "sonner";
@@ -125,10 +125,15 @@ const Navigation = () => {
               {navItems.map((item) => (
                 <div key={item.title} className="relative group">
                   <button className="flex items-center space-x-1 text-foreground hover:text-primary transition-colors">
-                    <span>{item.title}</span>
-                    <ChevronDown className="h-4 w-4" />
+                    <span>
+                      {{
+                        Solutions: "🛠️",
+                        Learning: "🎓",
+                        Marketplace: "🛒",
+                        Company: "🏢"
+                      }[item.title]} {item.title}
+                    </span>
                   </button>
-                  {/* Mega Menu Dropdown */}
                   <div className="absolute top-full left-0 w-64 bg-background border rounded-lg shadow-elegant opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 mt-2">
                     <div className="p-4">
                       {item.items.map((subItem) => (
